@@ -226,7 +226,7 @@ optimizer = ...
 criterion = ...
 
 # initialize colossalai
-engine, train_dataloader = colossalai.init(
+engine, train_dataloader = colossalai.initialize(
     model=model,
     optimizer=optimizer,
     criterion=criterion,
