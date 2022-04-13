@@ -225,8 +225,8 @@ optimizer = ...
 # build your loss function
 criterion = ...
 
-# initialize colossalai
-engine, train_dataloader, _, _ = colossalai.initialize(
+# initialize dmlite
+engine, train_dataloader = dmlite.init(
     model=model,
     optimizer=optimizer,
     criterion=criterion,
